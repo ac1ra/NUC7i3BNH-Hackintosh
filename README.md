@@ -19,7 +19,7 @@ Then change:
 
 - Boot -> Boot Priority -> Legacy Boot Priority, enable **"Legacy Boot"**.
 
-#### Installation
+#### Creating USB
 
 Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB flash with GPT parition for Clover UEFI. 
 
@@ -33,9 +33,9 @@ Terminal:
 
 **The plist files in this guide require Clover v4658 or newer. For full functionality and best choice, use the latest RehabMan build.**
 
-Clover installer from RehabMan: https://github.com/RehabMan/Clover
+Clover installer from RehabMan [recommend]: https://github.com/RehabMan/Clover
 
-Download the Clover installer on sourceforge, if you want to update to new version: http://sourceforge.net/projects/cloverefiboot/
+Download Clover installer on sourceforge, if you want to update to new version: http://sourceforge.net/projects/cloverefiboot/
 
 First task is to install to the USB "Clover EFI" parition. For Clover UEFI, run the Clover Installer package:
 - check "Install for UEFI booting only", "Install Clover in the ESP" will automatically select.
@@ -48,9 +48,15 @@ Terminal:
 Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
 USB bootloader ready.
 
-2. Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Running load put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
+#### Installation
+
+Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Running load put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
 In EFI Shell input parition fs1: where USB with EFI:
+
 > cd fs1:\BOOT
+
 > ls
+
 > BOOTX64.efi
+
 EFI Clover boot should start from USB-flash. Install MacOS Mojave.
