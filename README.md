@@ -9,17 +9,15 @@ BIOS version **0070**. BIOS setup can be accessed by mashing the F2 key while bo
 
 Then change:
 
-Boot -> Boot Configuration, disable **"Network Boot**
+- Boot -> Boot Configuration, disable **"Network Boot**
 
-Power -> Secondary Power Settings, **"Wake on LAN from S4/S5"**, set to **"Stay Off"**
+- Power -> Secondary Power Settings, **"Wake on LAN from S4/S5"**, set to **"Stay Off"**
 
-Boot -> Secure Boot, disable **"Secure Boot"**
+- Boot -> Secure Boot, disable **"Secure Boot"**
 
-Devices -> OnBoard Devices, disable **"Bluetooth"** (macOS is not compatible well with Intel Wi-Fi/Bluetooth)
+- Devices -> OnBoard Devices, disable **"Bluetooth"** (macOS is not compatible well with Intel Wi-Fi/Bluetooth)
 
-* Suggested: *
-
-Boot -> Boot Priority -> Legacy Boot Priority, enable **"Legacy Boot"**.
+- Boot -> Boot Priority -> Legacy Boot Priority, enable **"Legacy Boot"**.
 
 #### Installation
 
@@ -43,7 +41,9 @@ First task is to install to the USB "Clover EFI" parition. For Clover UEFI, run 
 - check "Install for UEFI booting only", "Install Clover in the ESP" will automatically select.
 - the defaults for Drivers64UEFI are recommended
 
-> sudo diskutil mount disk1s1 "where EFI parition on the USB"
+Terminal:
+
+> sudo diskutil mount disk1s1
 
 Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
 USB bootloader ready.
