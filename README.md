@@ -9,13 +9,13 @@ BIOS version 0070. BIOS setup can be accessed by mashing the F2 key while bootin
 
 Then change:
 
-Boot -> Boot Configuration, disable <h4>"Network Boot"</h4>
-Power -> Secondary Power Settings, <h4>"Wake on LAN from S4/S5"</h4>, set to </h4>"Stay Off"</h4>
-Boot -> Secure Boot, disable <h4>"Secure Boot"</h4>
-Devices -> OnBoard Devices, disable <h4>"Bluetooth"</h4> (macOS is not compatible well with Intel Wi-Fi/Bluetooth)
+Boot -> Boot Configuration, disable <b>"Network Boot"</b>
+Power -> Secondary Power Settings, <b>"Wake on LAN from S4/S5"</b>, set to <b>"Stay Off"<//b>
+Boot -> Secure Boot, disable <b>"Secure Boot"</b>
+Devices -> OnBoard Devices, disable <b>"Bluetooth"</b> (macOS is not compatible well with Intel Wi-Fi/Bluetooth)
 Suggested:
 
-Boot -> Boot Priority -> Legacy Boot Priority, enable <h4>"Legacy Boot"</h4>.
+Boot -> Boot Priority -> Legacy Boot Priority, enable <b>"Legacy Boot"</b>.
 
 I create the procedure to be simple to install Mojave on the NUC7i3BNH.
 1. Creating USB and installing using Clover UEFI works. Make USB flash with GPT parition for Clover UEFI. Terminal:
@@ -26,7 +26,7 @@ diskutil list
 -second partition, "install_osx", HFS+J, remainder
 diskutil partitionDisk /dev/disk1 1 GPT HFS+J "install_osx" R
 
-<h1>The plist files in this guide require Clover v4658 or newer. For full functionality and best choice, use the latest RehabMan build.</h1>
+<b>The plist files in this guide require Clover v4658 or newer. For full functionality and best choice, use the latest RehabMan build.</b>
 
 Clover installer from RehabMan: https://github.com/RehabMan/Clover
 Download the Clover installer on sourceforge, if you want to update to new version: http://sourceforge.net/projects/cloverefiboot/
