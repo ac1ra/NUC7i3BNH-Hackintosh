@@ -10,10 +10,14 @@ BIOS version **0070**. BIOS setup can be accessed by mashing the F2 key while bo
 Then change:
 
 Boot -> Boot Configuration, disable **"Network Boot**
+
 Power -> Secondary Power Settings, **"Wake on LAN from S4/S5"**, set to **"Stay Off"**
+
 Boot -> Secure Boot, disable **"Secure Boot"**
+
 Devices -> OnBoard Devices, disable **"Bluetooth"** (macOS is not compatible well with Intel Wi-Fi/Bluetooth)
-Suggested:
+
+* Suggested: *
 
 Boot -> Boot Priority -> Legacy Boot Priority, enable **"Legacy Boot"**.
 
@@ -23,11 +27,11 @@ Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB f
 
 Terminal:
 
-* (USB - GPT, one parition)
 > diskutil list
+
+> diskutil partitionDisk /dev/disk1 1 GPT HFS+J "install_osx" R
 - EFI will be created automatically.
 - Second partition, "install_osx", HFS+J, remainder.
-> diskutil partitionDisk /dev/disk1 1 GPT HFS+J "install_osx" R
 
 **The plist files in this guide require Clover v4658 or newer. For full functionality and best choice, use the latest RehabMan build.**
 
@@ -44,7 +48,7 @@ First task is to install to the USB "Clover EFI" parition. For Clover UEFI, run 
 Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
 USB bootloader ready.
 
-2. Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version **0070**). Well, put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
+2. Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Running load put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
 In EFI Shell input parition fs1: where USB with EFI:
 > cd fs1:\BOOT
 > ls
