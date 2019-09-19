@@ -8,15 +8,10 @@ This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-
 BIOS version **0070**. BIOS setup can be accessed by mashing the F2 key while booting up. It will get you to the main BIOS setup screens. To start, choose "Load Defaults" (choose from the menu or press F9 in the BIOS setup).
 
 Then change:
-
-- Boot -> Boot Configuration, disable **"Network Boot**
-
-- Power -> Secondary Power Settings, **"Wake on LAN from S4/S5"**, set to **"Stay Off"**
-
-- Boot -> Secure Boot, disable **"Secure Boot"**
-
-- Devices -> OnBoard Devices, disable **"Bluetooth"** (macOS is not compatible well with Intel Wi-Fi/Bluetooth)
-
+- Boot -> Boot Configuration, disable **"Network Boot**.
+- Power -> Secondary Power Settings, **"Wake on LAN from S4/S5"**, set to **"Stay Off"**.
+- Boot -> Secure Boot, disable **"Secure Boot"**.
+- Devices -> OnBoard Devices, disable **"Bluetooth"** (macOS is not compatible well with Intel Wi-Fi/Bluetooth).
 - Boot -> Boot Priority -> Legacy Boot Priority, enable **"Legacy Boot"**.
 
 #### Creating USB
@@ -53,10 +48,8 @@ USB bootloader ready.
 Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Running load put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
 In EFI Shell input parition fs1: where USB with EFI:
 
-> cd fs1:\BOOT
-
-> ls
-
-> BOOTX64.efi
+> cd fs1:\BOOT.
+> ls.
+> BOOTX64.efi.
 
 EFI Clover boot should start from USB-flash. Install MacOS Mojave.
