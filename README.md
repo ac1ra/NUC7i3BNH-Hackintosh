@@ -20,12 +20,12 @@ Boot -> Boot Priority -> Legacy Boot Priority, enable **"Legacy Boot"**.
 #### Installation
 
 Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB flash with GPT parition for Clover UEFI. Terminal:
-#(GPT, one parition)
-* diskutil list
-repartition /dev/disk1 GPT, one partition
-EFI will be created automatically
-second partition, "install_osx", HFS+J, remainder
-* diskutil partitionDisk /dev/disk1 1 GPT HFS+J "install_osx" R
+
+* (USB - GPT, one parition)
+> diskutil list
+- EFI will be created automatically
+- Second partition, "install_osx", HFS+J, remainder
+> diskutil partitionDisk /dev/disk1 1 GPT HFS+J "install_osx" R
 
 **The plist files in this guide require Clover v4658 or newer. For full functionality and best choice, use the latest RehabMan build.**
 
@@ -36,14 +36,14 @@ First task is to install to the USB "Clover EFI" parition. For Clover UEFI, run 
 - check "Install for UEFI booting only", "Install Clover in the ESP" will automatically select
 - the defaults for Drivers64UEFI are recommended
 
-* sudo diskutil mount disk1s1 "where EFI parition on the USB"
+> sudo diskutil mount disk1s1 "where EFI parition on the USB"
 
 Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
 USB bootloader ready.
 
 2. Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version 0070). Well, put F2 to BIOS and turn on Built-in EFI Shell in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice Built-in EFI Shell.
 In EFI Shell input parition fs1: where USB with EFI:
-* cd fs1:\BOOT
-* ls
-* BOOTX64.efi
+> cd fs1:\BOOT
+> ls
+> BOOTX64.efi
 EFI Clover boot should start from USB-flash. Install MacOS Mojave.
