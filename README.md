@@ -9,15 +9,15 @@ This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-
 ![frst img](/img/all.png)
 
 #### Specs
-* **CPU:** Intel Core i3 7100U, 2.4 ГГц (dual-core)
-* **RAM:** 2x4 Gb DDR4 Kingston 2133 Mhz
-* **SSD:** 120 Gb M'2 2280, WD Green WDS120G2G0B
-* **GPU:** Intel HD Graphics 620
-* **Ports:** SDXC/USB-3/USB Type-C(TB3)/LAN/3'5 Jack
-#### Works
+- **CPU:** Intel Core i3 7100U, 2.4 ГГц (dual-core)
+- **RAM:** 2x4 Gb DDR4 Kingston 2133 Mhz
+- **SSD:** 120 Gb M'2 2280, WD Green WDS120G2G0B
+- **GPU:** Intel HD Graphics 620
+- **Ports:** SDXC/USB-3/USB Type-C(TB3)/LAN/3'5 Jack
 
-#### Don't works
-Wi-Fi/BT
+#### Don't work
+- Original Wi-Fi/BT
+
 #### BIOS settings
 
 BIOS version **0070**. BIOS setup can be accessed by mashing the F2 key while booting up. It will get you to the main BIOS setup screens. To start, choose "Load Defaults" (choose from the menu or press F9 in the BIOS setup).
