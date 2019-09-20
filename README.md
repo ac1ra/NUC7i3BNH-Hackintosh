@@ -3,6 +3,8 @@
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
 
+My computer Intel NUC7i3BNH with MacOS 10.14.6. All devices work very well, but original Wi-Fi/BT adapter don't work.
+
 ![frst img](/img/PC.jpg)
 
 #### Performance
@@ -77,7 +79,7 @@ After installation mount local EFI disk. Terminal:
 
 > sudo diskutil mount disk0s1
 
-Rename EFI to EFI-backup for backup folder. Copy EFI from here to EFI partition.
+Rename CLOVER to CLOVER_bck for backup folder. Copy CLOVER from here to EFI partition.
 
 **P.S.:** If you want to update files into EFI, installation of the tools and patching is easy provided the scripts and tools at the repository: https://github.com/RehabMan/Intel-NUC-DSDT-Patch
 
