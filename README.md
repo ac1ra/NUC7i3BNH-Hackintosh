@@ -109,4 +109,4 @@ Last moment, you should write in EFI/CLOVER/config.plist -> Boot:
 
 > dart=0 -igfxnohdmi -cdfon lilucpu=9
 
-Reboot system. MacOS Mojave is ready.
+Reboot system. MacOS Mojave ready.
