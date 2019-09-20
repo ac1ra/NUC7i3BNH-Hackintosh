@@ -45,7 +45,7 @@ USB bootloader ready.
 
 #### Installation
 
-Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new secures in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Running load put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover EFI and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
+Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new protects in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Loading put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover Bootloader and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
 In EFI Shell input parition fs1: where USB with EFI:
 
 > cd fs1:\BOOT
@@ -55,3 +55,41 @@ In EFI Shell input parition fs1: where USB with EFI:
 > BOOTX64.efi
 
 EFI Clover boot should start from USB-flash. Install MacOS Mojave.
+
+#### Post Installation
+
+After installation mount local EFI disk. Terminal:
+
+> sudo diskutil mount disk0s1
+
+Rename EFI to EFI-backup for backup folder. Copy EFI from here to EFI partition.
+
+**P.S.:** If you want to update files into EFI, installation of the tools and patching is easy provided the scripts and tools at the repository: https://github.com/RehabMan/Intel-NUC-DSDT-Patch
+
+To start, the developer tools must be installed. Run Terminal, and type:
+
+> xcode-select --install
+
+> mkdir ~/Projects
+
+> cd ~/Projects
+
+> git clone https://github.com/RehabMan/Intel-NUC-DSDT-Patch nuc.git
+
+> download.sh
+
+> ./install_downloads.sh
+
+To finish the setup, we need a correctly patched ACPI.
+
+> make
+
+> make install_nuc7
+
+Finally, 'make install_nuc7', mounts the EFI partition, and copies the built files where they can be loaded by Clover (to EFI/Clover/ACPI/patched).
+
+Last moment, you should write in EFI/CLOVER/config.plist -> Boot:
+
+> dart=0 -igfxnohdmi -cdfon lilucpu=9
+
+Reboot system.
