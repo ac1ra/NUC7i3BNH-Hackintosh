@@ -6,7 +6,7 @@ This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-
 ![frst img](/img/PC.jpg)
 
 #### Performance
-[frst img](/img/all.png)
+![frst img](/img/all.png)
 
 #### Specs
 * **CPU:** Intel Core i3 7100U, 2.4 ГГц (dual-core)
