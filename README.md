@@ -2,7 +2,21 @@
 [GUIDE] Installing macOS Mojave (10.14.x) on Intel NUC7i3BNH using Clover UEFI
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
+![frst img](/img/PC.png)
 
+#### Performance
+![frst img](/img/1.png)![frst img](/img/2.png)![frst img](/img/3.png)
+
+#### Specs
+* **CPU:** Intel Core i3 7100U, 2.4 ГГц (dual-core)
+* **RAM:** 2x4 Gb DDR4 Kingston 2133 Mhz
+* **SSD:** 120 Gb M'2 2280, WD Green WDS120G2G0B
+* **GPU:** Intel HD Graphics 620
+* **Ports:** SDXC/USB-3/USB Type-C(TB3)/LAN/3'5 Jack 
+#### Works
+
+#### Don't works
+Wi-Fi/BT
 #### BIOS settings
 
 BIOS version **0070**. BIOS setup can be accessed by mashing the F2 key while booting up. It will get you to the main BIOS setup screens. To start, choose "Load Defaults" (choose from the menu or press F9 in the BIOS setup).
@@ -16,7 +30,7 @@ Then change:
 
 #### Creating USB
 
-Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB flash with GPT parition for Clover UEFI. 
+Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB flash with GPT parition for Clover UEFI.
 
 Terminal:
 
@@ -92,4 +106,4 @@ Last moment, you should write in EFI/CLOVER/config.plist -> Boot:
 
 > dart=0 -igfxnohdmi -cdfon lilucpu=9
 
-Reboot system.
+Reboot system. MacOS Mojave is ready.
