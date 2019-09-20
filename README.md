@@ -2,7 +2,8 @@
 [GUIDE] Installing macOS Mojave (10.14.x) on Intel NUC7i3BNH using Clover UEFI
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
-![frst img](/img/PC.png)
+
+![frst img](/img/PC.jpg)
 
 #### Performance
 ![frst img](/img/1.png)![frst img](/img/2.png)![frst img](/img/3.png)
@@ -12,7 +13,7 @@ This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-
 * **RAM:** 2x4 Gb DDR4 Kingston 2133 Mhz
 * **SSD:** 120 Gb M'2 2280, WD Green WDS120G2G0B
 * **GPU:** Intel HD Graphics 620
-* **Ports:** SDXC/USB-3/USB Type-C(TB3)/LAN/3'5 Jack 
+* **Ports:** SDXC/USB-3/USB Type-C(TB3)/LAN/3'5 Jack
 #### Works
 
 #### Don't works
