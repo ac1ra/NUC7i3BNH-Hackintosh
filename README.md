@@ -59,7 +59,7 @@ Terminal:
 
 Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
 
-####Createinstallmedia method
+#### Createinstallmedia method
 
 This is the same mechanism you would use to create a USB installer for a real Mac Mojave.
 
