@@ -58,7 +58,16 @@ Terminal:
 > sudo diskutil mount disk1s1
 
 Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
-USB bootloader ready.
+
+####Createinstallmedia method
+
+This is the same mechanism you would use to create a USB installer for a real Mac Mojave.
+
+It is a single line, executed in Terminal:
+
+> sudo "/Applications/Install macOS Mojave.app/Contents/Resources/createinstallmedia" --volume  /Volumes/install_osx --nointeraction
+
+USB bootloader is ready.
 
 #### Installation
 
