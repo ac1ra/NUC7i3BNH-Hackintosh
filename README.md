@@ -124,3 +124,18 @@ Last moment, you should write in EFI/CLOVER/config.plist -> Boot:
 > dart=0 -igfxnohdmi -cdfon lilucpu=9
 
 Reboot system. MacOS Mojave ready.
+
+#### Adding: Problem with hibernation ####
+
+Everything required for CPU/IGPU power management is already installed with the steps above.
+There is no longer any need to use the ssdtPRgen.sh script.
+
+Be aware that hibernation (suspend to disk or S4 sleep) is not well supported on hackintosh.
+
+You should disable it:
+Code:
+> sudo pmset -a hibernatemode 0
+> sudo rm /var/vm/sleepimage
+> sudo mkdir /var/vm/sleepimage
+
+Always check your hibernatemode after updates and disable it. System updates tend to re-enable it, although the trick above (making sleepimage a directory) tends to help.
