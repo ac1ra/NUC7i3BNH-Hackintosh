@@ -105,7 +105,7 @@ To start, the developer tools must be installed. Run Terminal, and type:
 
 > git clone https://github.com/RehabMan/Intel-NUC-DSDT-Patch nuc.git
 
-> cd ~/%your username%/nuc.git
+> cd nuc.git
 
 > download.sh
 
