@@ -33,7 +33,7 @@ Then change:
 
 #### Creating USB
 
-Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB flash with GPT parition for Clover UEFI.
+**I recommend to create on the USB-flash with USB3.0, because the install will very long.** Creating USB and installing using Clover UEFI works on the NUC7i3BNH. Make USB flash with GPT parition for Clover UEFI.
 
 Terminal:
 
@@ -57,7 +57,10 @@ Terminal:
 
 > sudo diskutil mount disk1s1
 
-Remove CLOVER from EFI. Download CLOVER from here and copy to EFI.
+Remove Drivers64UEFI from EFI\CLOVER. Download Drivers64UEFI from here and copy to EFI\CLOVER. Replace the operation with EFI\CLOVER\kext\other.
+
+Download config_install_nuc7.plist: https://github.com/RehabMan/Intel-NUC-DSDT-Patch/raw/master/config_install_nuc7.plist
+Rename config_install_nuc7.plist to config.plist in EFI/CLOVER. Old config.plist rename to config_default.
 
 #### Createinstallmedia method
 
@@ -101,6 +104,8 @@ To start, the developer tools must be installed. Run Terminal, and type:
 > cd ~/Projects
 
 > git clone https://github.com/RehabMan/Intel-NUC-DSDT-Patch nuc.git
+
+> cd ~/%your username%/nuc.git
 
 > download.sh
 
