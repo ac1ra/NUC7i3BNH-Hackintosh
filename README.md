@@ -82,6 +82,10 @@ In EFI Shell input parition fs1: where USB with EFI:
 
 > fs1:\EFI\BOOT\BOOTX64.efi
 
+**or**
+
+> fs1:\EFI\CLOVER\CLOVERX64.efi
+
 EFI Clover boot should start from USB-flash. Install MacOS Mojave.
 
 #### Post Installation
