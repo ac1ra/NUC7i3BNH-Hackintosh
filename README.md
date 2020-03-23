@@ -1,7 +1,7 @@
 # NUC7i3BNH-Hackintosh
 [GUIDE] Installing macOS Mojave (10.14.x) on Intel NUC7i3BNH using Clover UEFI. 
 
-UPD 23.03.2020: MacOS Catalina (10.15.x) is working.
+**UPD 23.03.2020:** MacOS Catalina (10.15.x) is working.
 
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
