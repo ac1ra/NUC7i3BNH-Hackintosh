@@ -77,11 +77,7 @@ USB bootloader is ready.
 Unfortuanely, my Intel NUC7i3BNH cannot read UEFI USB. I suspect what Intel includes new protects in new version bios (BIOS version **0070**). Well, I suggest to choise other method. Loading put **F2** to BIOS and turn on **Built-in EFI Shell** in Boot. Put USB flash with Clover Bootloader and reboot. Turn F10 to get boot menu and choice **Built-in EFI Shell**.
 In EFI Shell input parition fs1: where USB with EFI:
 
-> cd fs1:\BOOT
-
-> ls
-
-> BOOTX64.efi
+> cd fs1:\EFI\BOOT\BOOTX64.efi
 
 EFI Clover boot should start from USB-flash. Install MacOS Mojave.
 
