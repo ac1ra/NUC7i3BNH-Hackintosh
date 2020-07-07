@@ -1,9 +1,7 @@
 # NUC7i3BNH-Hackintosh
 [GUIDE] Installing macOS Mojave (10.14.x) on Intel NUC7i3BNH using Clover UEFI. 
 
-**UPD 23.03.2020:** MacOS Catalina (10.15.x) is working.
-
-**UPD 07.07.2020:** Moving from macOS Mojave to macOS Catalina with an existing MultiBeast 11 for macOS Mojave installation. The following directions allow a user to manually remove kexts from /Library/Extensions and recache system on macOS Catalina.
+**UPD 23.03.2020:** MacOS Catalina (10.15.x) is working. Moving from macOS Mojave to macOS Catalina with an existing MultiBeast 11 for macOS Mojave installation. The following directions allow a user to manually remove kexts from /Library/Extensions and recache system on macOS Catalina.
 
 1. Update to macOS Catalina using UniBeast 10​
 2. Run MultiBeast 12 to install all post-installation items​
