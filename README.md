@@ -166,3 +166,5 @@ Always check your hibernatemode after updates and disable it. System updates ten
 7. > touch /Library/Extensions /System/Library/Extensions
 8. > kextcache -i /
 9. Reboot​
+
+**Enjoy it!**
