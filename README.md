@@ -148,16 +148,16 @@ Always check your hibernatemode after updates and disable it. System updates ten
  >AHCI_3rdParty_eSATA.kext, AHCI_3rdParty_SATA.kext, AHCI_Intel_Generic_SATA.kext, AppleALC.kext, AppleIGB.kext, AppleIntelE1000e.kext, AtherosE2200Ethernet.kext, FakePCIID_XHCIMux.kext, FakePCIID.kext, GenericUSBXHCI.kext, IntelMausiEthernet.kext, Lilu.kext, NullCPUPowerManagement.kext, RealtekRTL8111.kext, USBInjectAll.kext, VoodooHDA.kext, VoodooTSCSync.kext, WhateverGreen.kext
  
 3.  For reference, the default macOS Catalina /Library/Extensions from a clean installation:
-> -ACS6x.kext, 
-> -ArcMSR.kext
->ATTOCelerityFC8.kext
->ATTOExpressSASHBA2.kext
->ATTOExpressSASRAID2.kext
->CalDigitHDProDrv.kext
->HighPointIOP.kext
->HighPointRR.kext
->PromiseSTEX.kext
->SoftRAID.kext
+-ACS6x.kext
+-ArcMSR.kext
+-ATTOCelerityFC8.kext
+-ATTOExpressSASHBA2.kext
+-ATTOExpressSASRAID2.kext
+-CalDigitHDProDrv.kext
+-HighPointIOP.kext
+-HighPointRR.kext
+-PromiseSTEX.kext
+-SoftRAID.kext
 
 4. Open /Applications/Utilities/Terminal​
 5. Enter the following: sudo -s and type your password​
