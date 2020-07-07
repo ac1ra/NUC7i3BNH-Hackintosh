@@ -48,7 +48,7 @@ Terminal:
 
 Clover installer from RehabMan [recommend]: https://github.com/RehabMan/Clover
 
-Download Clover installer on sourceforge, if you want to update to new version: http://sourceforge.net/projects/cloverefiboot/
+Download Clover installer on sourceforge, if you want to update to new version: https://github.com/CloverHackyColor/CloverBootloader/releases
 
 First task is to install to the USB Clover EFI parition. For Clover UEFI, run the Clover Installer package:
 - check "Install for UEFI booting only", "Install Clover in the ESP" will automatically select.
