@@ -1,5 +1,5 @@
 # NUC7i3BNH-Hackintosh
-[GUIDE] Installing macOS Mojave (10.14.x) on Intel NUC7i3BNH using Clover UEFI. 
+[GUIDE] Installing macOS Mojave (10.14.x)/ macOS Catalina(10.15.x) on Intel NUC7i3BNH using Clover UEFI. 
 
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
@@ -143,33 +143,26 @@ Always check your hibernatemode after updates and disable it. System updates ten
 
 **UPD 23.03.2020:** MacOS Catalina (10.15.x) is working. Moving from macOS Mojave to macOS Catalina with an existing MultiBeast 11 for macOS Mojave installation. The following directions allow a user to manually remove kexts from /Library/Extensions and recache system on macOS Catalina.
 
-1. Navigate to /Library/Extensions​
+1. Navigate to /Library/Extensions
 2. If any 3rd party kexts exist, delete them:
- > AHCI_3rdParty_eSATA.kext, AHCI_3rdParty_SATA.kext, AHCI_Intel_Generic_SATA.kext, AppleALC.kext, AppleIGB.kext, AppleIntelE1000e.kext, AtherosE2200Ethernet.kext, FakePCIID_XHCIMux.kext, FakePCIID.kext, GenericUSBXHCI.kext, IntelMausiEthernet.kext, Lilu.kext, NullCPUPowerManagement.kext, RealtekRTL8111.kext, USBInjectAll.kext, VoodooHDA.kext, VoodooTSCSync.kext, WhateverGreen.kext
+
+**AHCI_3rdParty_eSATA.kext, AHCI_3rdParty_SATA.kext, AHCI_Intel_Generic_SATA.kext, AppleALC.kext, AppleIGB.kext, AppleIntelE1000e.kext, AtherosE2200Ethernet.kext, FakePCIID_XHCIMux.kext, FakePCIID.kext, GenericUSBXHCI.kext, IntelMausiEthernet.kext, Lilu.kext, NullCPUPowerManagement.kext, RealtekRTL8111.kext, USBInjectAll.kext, VoodooHDA.kext, VoodooTSCSync.kext, WhateverGreen.kext**
  
 3.  For reference, the default macOS Catalina /Library/Extensions from a clean installation:
-> ACS6x.kext
+- ACS6x.kext
+- ArcMSR.kext
+- ATTOCelerityFC8.kext
+- ATTOExpressSASHBA2.kext
+- ATTOExpressSASRAID2.kext
+- CalDigitHDProDrv.kext
+- HighPointIOP.kext
+- HighPointRR.kext
+- PromiseSTEX.kext
+- SoftRAID.kext
 
-> ArcMSR.kext
-
-> ATTOCelerityFC8.kext
-
-> ATTOExpressSASHBA2.kext
-
-> ATTOExpressSASRAID2.kext
-
-> CalDigitHDProDrv.kext
-
-> HighPointIOP.kext
-
-> HighPointRR.kext
-
-> PromiseSTEX.kext
-
-> SoftRAID.kext
-4. Open /Applications/Utilities/Terminal​
-5. Enter the following: sudo -s and type your password​
-6. Enter the following: mount -uw /​
-7. Enter the following: touch /Library/Extensions /System/Library/Extensions​
-8. Enter the following: kextcache -i /​
+4. Open /Applications/Utilities/Terminal
+5.  > sudo -s
+6.  > mount -uw /
+7. > touch /Library/Extensions /System/Library/Extensions
+8. > kextcache -i /
 9. Reboot​
