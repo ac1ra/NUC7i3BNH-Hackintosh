@@ -3,22 +3,11 @@
 
 **UPD 23.03.2020:** MacOS Catalina (10.15.x) is working. Moving from macOS Mojave to macOS Catalina with an existing MultiBeast 11 for macOS Mojave installation. The following directions allow a user to manually remove kexts from /Library/Extensions and recache system on macOS Catalina.
 
-1. Update to macOS Catalina using UniBeast 10​
-2. Run MultiBeast 12 to install all post-installation items​
-3. Navigate to /Library/Extensions​
-4. If any 3rd party kexts exist, delete them*​
-5. Open /Applications/Utilities/Terminal​
-6. Enter the following: sudo -s and type your password​
-7. Enter the following: mount -uw /​
-8. Enter the following: touch /Library/Extensions /System/Library/Extensions​
-9. Enter the following: kextcache -i /​
-10. Reboot​
-
-I'm recommended to remove files from /Library/Extensions:
-
-AHCI_3rdParty_eSATA.kext, AHCI_3rdParty_SATA.kext, AHCI_Intel_Generic_SATA.kext, AppleALC.kext, AppleIGB.kext, AppleIntelE1000e.kext, AtherosE2200Ethernet.kext, FakePCIID_XHCIMux.kext, FakePCIID.kext, GenericUSBXHCI.kext, IntelMausiEthernet.kext, Lilu.kext, NullCPUPowerManagement.kext, RealtekRTL8111.kext, USBInjectAll.kext, VoodooHDA.kext, VoodooTSCSync.kext, WhateverGreen.kext
-
-For reference, the default macOS Catalina /Library/Extensions from a clean installation:
+1. Navigate to /Library/Extensions​
+2. If any 3rd party kexts exist, delete them:
+ >AHCI_3rdParty_eSATA.kext, AHCI_3rdParty_SATA.kext, AHCI_Intel_Generic_SATA.kext, AppleALC.kext, AppleIGB.kext, AppleIntelE1000e.kext, AtherosE2200Ethernet.kext, FakePCIID_XHCIMux.kext, FakePCIID.kext, GenericUSBXHCI.kext, IntelMausiEthernet.kext, Lilu.kext, NullCPUPowerManagement.kext, RealtekRTL8111.kext, USBInjectAll.kext, VoodooHDA.kext, VoodooTSCSync.kext, WhateverGreen.kext
+ 
+3.  For reference, the default macOS Catalina /Library/Extensions from a clean installation:
 - ACS6x.kext
 - ArcMSR.kext
 - ATTOCelerityFC8.kext
@@ -29,6 +18,13 @@ For reference, the default macOS Catalina /Library/Extensions from a clean insta
 - HighPointRR.kext
 - PromiseSTEX.kext
 - SoftRAID.kext
+
+4. Open /Applications/Utilities/Terminal​
+5. Enter the following: sudo -s and type your password​
+6. Enter the following: mount -uw /​
+7. Enter the following: touch /Library/Extensions /System/Library/Extensions​
+8. Enter the following: kextcache -i /​
+9. Reboot​
 
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
