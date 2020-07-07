@@ -18,37 +18,37 @@
 
 I'm recommended to remove this files from /Library/Extensions:
 
-AHCI_3rdParty_eSATA.kext
-AHCI_3rdParty_SATA.kext
-AHCI_Intel_Generic_SATA.kext
-AppleALC.kext
-AppleIGB.kext
-AppleIntelE1000e.kext
-AtherosE2200Ethernet.kext
-FakePCIID_XHCIMux.kext
-FakePCIID.kext
-GenericUSBXHCI.kext
-IntelMausiEthernet.kext
-Lilu.kext
-NullCPUPowerManagement.kext
-RealtekRTL8111.kext
-USBInjectAll.kext
-VoodooHDA.kext
-VoodooTSCSync.kext
-WhateverGreen.kext
+AHCI_3rdParty_eSATA.kext​
+AHCI_3rdParty_SATA.kext​
+AHCI_Intel_Generic_SATA.kext​
+AppleALC.kext​
+AppleIGB.kext​
+AppleIntelE1000e.kext​
+AtherosE2200Ethernet.kext​
+FakePCIID_XHCIMux.kext​
+FakePCIID.kext​
+GenericUSBXHCI.kext​
+IntelMausiEthernet.kext​
+Lilu.kext​
+NullCPUPowerManagement.kext​
+RealtekRTL8111.kext​
+USBInjectAll.kext​
+VoodooHDA.kext​
+VoodooTSCSync.kext​
+WhateverGreen.kext​
 
 For reference, the default macOS Catalina /Library/Extensions from a clean installation:
 
-ACS6x.kext
-ArcMSR.kext
-ATTOCelerityFC8.kext
-ATTOExpressSASHBA2.kext
-ATTOExpressSASRAID2.kext
-CalDigitHDProDrv.kext
-HighPointIOP.kext
-HighPointRR.kext
-PromiseSTEX.kext
-SoftRAID.kext
+ACS6x.kext​
+ArcMSR.kext​
+ATTOCelerityFC8.kext​
+ATTOExpressSASHBA2.kext​
+ATTOExpressSASRAID2.kext​
+CalDigitHDProDrv.kext​
+HighPointIOP.kext​
+HighPointRR.kext​
+PromiseSTEX.kext​
+SoftRAID.kext​
 
 ### Overview
 This guide take from @Rehabman's <link>https://www.tonymacx86.com/threads/guide-intel-nuc7-nuc8-using-clover-uefi-nuc7i7bxx-nuc8i7bxx-etc.261711/</link>
