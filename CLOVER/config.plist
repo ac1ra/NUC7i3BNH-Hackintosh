@@ -128,16 +128,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_PTS,1,N) to ZPTS</string>
+					<string>Fix NUC BIOS DSDT Device(RTC)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BUUwE=
+					oAqTU1RBUwE=
 					</data>
 					<key>Replace</key>
 					<data>
-					WlBUUwE=
+					oAqRCv8L//8=
 					</data>
 				</dict>
 			</array>
@@ -158,7 +158,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -igfxnohdmi -cdfon lilucpu=9</string>
+		<string>dart=0 -igfxnohdmi -cdfon</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -166,42 +166,64 @@
 		<key>Timeout</key>
 		<integer>5</integer>
 	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>#FrequencyMHz</key>
-		<integer>1800</integer>
-	</dict>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>#IntelGFX</key>
-			<string>0x19168086</string>
+			<integer>28</integer>
 		</dict>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0)/Pci(0x02,0)</key>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-con1-type</key>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
 				<data>
-				AAgAAA==
+				AwAAAA==
+				</data>
+				<key>model</key>
+				<string>Cannon Point-LP High Definition Audio Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				CQClPg==
+				</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device-id</key>
+				<data>
+				pT4AAA==
+				</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-type</key>
+				<data>
+				AQAAAA==
 				</data>
 				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
-			</dict>
-			<key>PciRoot(0)/Pci(0x1f,3)</key>
-			<dict>
-				<key>#device-id</key>
 				<data>
-				dJ0AAA==
+				AQAAAA==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel Iris Plus Graphics 655</string>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -241,12 +263,16 @@
 				<dict>
 					<key>Disabled</key>
 					<false/>
+					<key>FullTitle</key>
+					<string>UEFI internal</string>
+					<key>Hidden</key>
+					<string>Always</string>
 					<key>Ignore</key>
 					<false/>
-					<key>Title</key>
-					<string>Windows</string>
+					<key>NoCaches</key>
+					<false/>
 					<key>Type</key>
-					<string>Windows</string>
+					<string>Other</string>
 				</dict>
 			</array>
 		</dict>
@@ -257,31 +283,19 @@
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
 			<true/>
-			<key>Kernel</key>
-			<string>All</string>
 			<key>Legacy</key>
 			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>BGM</string>
-	</dict>
-	<key>Graphics</key>
-	<dict>
-		<key>#ig-platform-id</key>
-		<string>0x19160000</string>
-		<key>Inject</key>
-		<dict>
-			<key>Intel</key>
-			<false/>
-		</dict>
+		<string>Olarila</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -378,13 +392,13 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM162.88Z.0221.B00.1809171530</string>
+		<string>IM181.88Z.F000.B00.1809171524</string>
 		<key>Board-ID</key>
-		<string>Mac-FFE5EF870D7BA81A</string>
+		<string>Mac-4B682C642B45593E</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02509101CDGQRY1H</string>
+		<string>C02714101QXH69F1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -396,7 +410,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>223.0.0.0.0</string>
+		<string>165.0.0.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
 		<key>FirmwareFeatures</key>
@@ -410,13 +424,13 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
+		<string>0x00</string>
 		<key>ProductName</key>
-		<string>iMac16,2</string>
+		<string>iMac18,1</string>
 		<key>SerialNumber</key>
-		<string>C02PC031GG78</string>
+		<string>C02TJ0FPH7JY</string>
 		<key>SmUUID</key>
-		<string>B74C02A9-2D78-4039-82C4-FDFAF8631029</string>
+		<string>3283BB5E-96D8-47CD-B201-4C2B438B1536</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
