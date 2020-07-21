@@ -71,7 +71,7 @@ This is the same mechanism you would use to create a USB installer for a real Ma
 
 It is a single line, executed in Terminal:
 
-> sudo "/Applications/Install macOS Mojave.app/Contents/Resources/createinstallmedia" --volume  /Volumes/install_osx --nointeraction
+> sudo "/Applications/Install macOS Catalina.app/Contents/Resources/createinstallmedia" --volume  /Volumes/install_osx --nointeraction
 
 USB bootloader is ready.
 
@@ -126,7 +126,7 @@ Last moment, you should write in EFI/CLOVER/config.plist -> Boot:
 
 > dart=0 -igfxnohdmi -cdfon lilucpu=9
 
-Reboot system. MacOS Mojave ready.
+Reboot system. MacOS Catalina ready.
 
 #### Adding: Problem with hibernation ####
 
