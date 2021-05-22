@@ -24,6 +24,8 @@ My computer Intel NUC7i3BNH with MacOS 10.15.5. All devices work very well, but 
 
 #### Don't work
 - Original Wi-Fi/BT
+- SD-card
+- Tunderbolt 3 / usb-c
 
 #### BIOS settings
 
